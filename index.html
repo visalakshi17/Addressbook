@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="addressbook.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addressbook</title>
+</head>
+<body>
+    <div class="addressBook">
+        <header>
+            <div class="titleBar">
+                <p>Address Book</p>
+            </div>
+            <div class="navigationBar">
+                <nav>
+                    <div class="nav">
+                        <a href="#HOME" id="home">HOME</a>
+                        <a href="#ADD" id="add">+ADD</a>
+                        <a href="#"><img src="/images/blog-icon.png" alt="logo" id="logo"></a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="displaySection">
+                <div class="contactSection">
+                    <div class="contacts">
+                        <p>CONTACTS</p>
+                    </div>
+                    <div id="chk">
+                    <div class="person" id="person">
+                        <p class="name"></p>
+                        <p class="mail"></p>
+                        <p class="phNo"></p>
+                    </div>
+                    </div>
+                </div>
+                <div class="add">
+                    <form action="" id="form">
+                        <div class="section">
+                            <div class="label" id=section1>
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="textBox">
+                                <input type="text" id="nameLabel">
+                                <p id="nameError"></p>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="label">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="textBox">
+                                <input type="text" id="email">
+                                <p id="mailError"></p>
+                            </div>
+                        </div>
+                        <div class="mobileSection">
+                        <div class="section">
+                            <div class="label">
+                                <label for="mobile">mobile</label>
+                            </div>
+                            <div class="textBox">
+                                <input type="text" id="mobile">
+                                <p id="phnoError"></p>
+                            </div>
+                        </div>
+                        <div class="section" id="landline">
+                            <div class="label">
+                                <label for="landline">landline</label>
+                            </div>
+                            <div class="textBox">
+                                <input type="text" id="landlineText">
+                                <p id="landlineError"></p>
+                            </div>
+                        </div></div>
+                        <div class="section">
+                            <div class="label">
+                                <label for="website">Website</label>
+                            </div>
+                            <div class="textBox">
+                                <input type="text" id="website">
+                                <p id="nameError"></p>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="label">
+                                <label for="address">address</label>
+                                <p id="addressError"></p>
+                            </div>
+                            <div class="textBox">
+                                <input type="text" id="address">
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button id="addButton">Add</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="details" id="details">
+                    <div class="topSection">
+                        <div class="nameSection"><input type="text" id="nameSection"></div>
+                        <div class="edit"><a href="#editImg"><img src="/images/edit1.jpg" id="editImg"></a><p id="editText">EDIT</p></div>
+                        <div class="delete" id="dlt"><a href="#dltImg"> <img src="/images/delete1.png" id="dltImg"></a><p id="dltText">DELETE</p></div>
+                    </div>
+                    <div class="mailSection">
+                        <input type="text" id="mailSection">
+                        <p id="mailError"></p>
+                    </div>
+                    <div class="mobileSection">
+                        <input type="text" id="mobilSection"></p>
+                        <p id="phnoError"></p>
+                        <input type="text" id="landlineSection">
+                    </div>
+                    <div class="websiteSection">
+                        <p>Website: http://technovert.com</p>
+                    </div>
+                    <div class="addressSection">
+                        <input type="text" id="addresSection">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="jquery-3.6.1.min.js"></script>
+        <script src="addressbook.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7/jquery.inputmask.min.js"></script>"
+    </div>
+</body>
+
+</html>
